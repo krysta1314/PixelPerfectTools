@@ -1,0 +1,5 @@
+{
+  "name": "PixelPerfect AI Upscaler",
+  "description": "A high-performance AI image upscaler and enhancer featuring real-time before/after comparison, built with React and Gemini 2.5.",
+  "requestFramePermissions": []
+}
