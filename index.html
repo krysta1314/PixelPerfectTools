@@ -1,85 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PixelPerfect AI - Free Online Image Upscaler & Enhancer</title>
-    <meta name="description" content="Upscale images up to 4x resolution instantly with PixelPerfect AI. Enhance photo quality, remove noise, and sharpen details for free using advanced Gemini models." />
-    <meta name="keywords" content="AI upscaler, image enhancer, photo restoration, 4k upscaling, remove noise, fix blurry photos, AI tools" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="PixelPerfect AI - Professional Image Upscaler" />
-    <meta property="og:description" content="Transform low-resolution photos into 4K masterpieces with AI." />
-    <meta property="og:image" content="https://picsum.photos/id/237/1200/630" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="PixelPerfect AI - Professional Image Upscaler" />
-    <meta property="twitter:description" content="Transform low-resolution photos into 4K masterpieces with AI." />
-    <meta property="twitter:image" content="https://picsum.photos/id/237/1200/630" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelPerfect AI - Free Online Image Upscaler & Enhancer</title>
+  <meta name="description"
+    content="Upscale images up to 4x resolution instantly with PixelPerfect AI. Enhance photo quality, remove noise, and sharpen details for free using advanced Gemini models." />
+  <meta name="keywords"
+    content="AI upscaler, image enhancer, photo restoration, 4k upscaling, remove noise, fix blurry photos, AI tools" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PixelPerfect AI - Professional Image Upscaler" />
+  <meta property="og:description" content="Transform low-resolution photos into 4K masterpieces with AI." />
+  <meta property="og:image" content="https://picsum.photos/id/237/1200/630" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="PixelPerfect AI - Professional Image Upscaler" />
+  <meta property="twitter:description" content="Transform low-resolution photos into 4K masterpieces with AI." />
+  <meta property="twitter:image" content="https://picsum.photos/id/237/1200/630" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+              950: '#082f49',
+            }
+          },
+          animation: {
+            'gradient-x': 'gradient-x 15s ease infinite',
+            'shimmer': 'shimmer 2s linear infinite',
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            'gradient-x': {
+              '0%, 100%': {
+                'background-size': '200% 200%',
+                'background-position': 'left center'
+              },
+              '50%': {
+                'background-size': '200% 200%',
+                'background-position': 'right center'
+              },
             },
-            colors: {
-              primary: {
-                50: '#f0f9ff',
-                100: '#e0f2fe',
-                200: '#bae6fd',
-                300: '#7dd3fc',
-                400: '#38bdf8',
-                500: '#0ea5e9',
-                600: '#0284c7',
-                700: '#0369a1',
-                800: '#075985',
-                900: '#0c4a6e',
-                950: '#082f49',
+            'shimmer': {
+              'from': {
+                'backgroundPosition': '0 0'
+              },
+              'to': {
+                'backgroundPosition': '-200% 0'
               }
             },
-            animation: {
-              'gradient-x': 'gradient-x 15s ease infinite',
-              'shimmer': 'shimmer 2s linear infinite',
-              'float': 'float 6s ease-in-out infinite',
-            },
-            keyframes: {
-              'gradient-x': {
-                '0%, 100%': {
-                  'background-size': '200% 200%',
-                  'background-position': 'left center'
-                },
-                '50%': {
-                  'background-size': '200% 200%',
-                  'background-position': 'right center'
-                },
-              },
-              'shimmer': {
-                'from': {
-                  'backgroundPosition': '0 0'
-                },
-                'to': {
-                  'backgroundPosition': '-200% 0'
-                }
-              },
-              'float': {
-                '0%, 100%': { transform: 'translateY(0)' },
-                '50%': { transform: 'translateY(-20px)' },
-              }
+            'float': {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
             }
           }
         }
       }
-    </script>
-    <script type="application/ld+json">
+    }
+  </script>
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
@@ -95,48 +99,49 @@
       "description": "A high-performance AI image upscaler and enhancer featuring real-time before/after comparison."
     }
     </script>
-    <style>
-      /* Smooth theme transition */
-      body {
-        transition: background-color 0.4s ease, color 0.4s ease;
-      }
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
-      ::-webkit-scrollbar-track {
-        background: transparent;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #cbd5e1;
-        border-radius: 5px;
-        border: 2px solid transparent;
-        background-clip: content-box;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #94a3b8;
-        border: 2px solid transparent;
-        background-clip: content-box;
-      }
-      .dark ::-webkit-scrollbar-thumb {
-        background: #334155;
-      }
-      .dark ::-webkit-scrollbar-thumb:hover {
-        background: #475569;
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0"
-  }
-}
-</script>
+  <style>
+    /* Smooth theme transition */
+    body {
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 5px;
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+
+    .dark ::-webkit-scrollbar-thumb {
+      background: #334155;
+    }
+
+    .dark ::-webkit-scrollbar-thumb:hover {
+      background: #475569;
+    }
+  </style>
+
 </head>
-  <body class="bg-gray-50 text-slate-900 dark:bg-[#0B0F19] dark:text-slate-50 antialiased selection:bg-primary-500 selection:text-white">
-    <div id="root"></div>
-  </body>
+
+<body
+  class="bg-gray-50 text-slate-900 dark:bg-[#0B0F19] dark:text-slate-50 antialiased selection:bg-primary-500 selection:text-white">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>

@@ -55,19 +55,19 @@ export const Features: React.FC<{ t: Translations }> = ({ t }) => {
           </div>
 
           {/* Feature 4 */}
-          <div className="md:col-span-2 bg-gradient-to-br from-slate-900 to-slate-800 text-white p-8 md:p-12 rounded-3xl relative overflow-hidden flex flex-col md:flex-row items-center gap-8">
+          <div className="md:col-span-2 bg-slate-50 dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-800 border border-slate-200 dark:border-slate-700 p-8 md:p-12 rounded-3xl relative overflow-hidden flex flex-col md:flex-row items-center gap-8">
              <div className="flex-1 z-10">
-                <h3 className="text-2xl font-bold mb-4">{t.privacyTitle}</h3>
-                <p className="text-slate-300 mb-6">{t.privacyDesc}</p>
+                <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">{t.privacyTitle}</h3>
+                <p className="text-slate-600 dark:text-slate-300 mb-6">{t.privacyDesc}</p>
                 <div className="flex gap-2">
-                  <span className="px-3 py-1 bg-white/10 rounded-lg text-sm border border-white/10">{t.privacyItem1}</span>
-                  <span className="px-3 py-1 bg-white/10 rounded-lg text-sm border border-white/10">{t.privacyItem2}</span>
+                  <span className="px-3 py-1 bg-white dark:bg-white/10 rounded-lg text-sm border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-200">{t.privacyItem1}</span>
+                  <span className="px-3 py-1 bg-white dark:bg-white/10 rounded-lg text-sm border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-200">{t.privacyItem2}</span>
                 </div>
              </div>
              <div className="relative w-32 h-32 flex items-center justify-center">
-                <div className="absolute inset-0 border-4 border-dashed border-white/20 rounded-full animate-[spin_10s_linear_infinite]"></div>
-                <div className="absolute inset-4 border-4 border-white/10 rounded-full"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary-400"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <div className="absolute inset-0 border-4 border-dashed border-slate-300 dark:border-white/20 rounded-full animate-[spin_10s_linear_infinite]"></div>
+                <div className="absolute inset-4 border-4 border-slate-200 dark:border-white/10 rounded-full"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary-500 dark:text-primary-400"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
              </div>
           </div>
 
