@@ -62,7 +62,7 @@ const en: Translations = {
   subAction: "View Plans",
   freeQuota: "Free Uses: ",
   credits: "Credits: ",
-  
+
   // Misc
   premiumFeatures: "Premium Features",
   privacyTitle: "Privacy First",
@@ -97,6 +97,15 @@ const en: Translations = {
   faqA6: "Upload an image file to PixelPerfect Image upscaler and let our artificial intelligence technology resize it for you. Then download the resulting high-res image.",
   faqQ7: "What is the best image upscaler?",
   faqA7: "The best Image upscaler is made by PixelPerfect, and it's genius but humble engineers.",
+
+  // Tools Menu
+  toolsMenu: "Tools",
+  allTools: "All Tools",
+  imageUpscaler: "Image Upscaler",
+  imageRemover: "Image Background Remover",
+  imageExtender: "Image Extender",
+  videoEnhancer: "AI Video Enhancer",
+  comingSoon: "Coming Soon",
 };
 
 const zhCN: Translations = {
@@ -145,7 +154,7 @@ const zhCN: Translations = {
   subAction: "查看套餐",
   freeQuota: "免费次数：",
   credits: "积分：",
-  
+
   premiumFeatures: "高级功能",
   privacyTitle: "隐私至上",
   privacyDesc: "您的照片将得到安全处理并自动删除。我们尊重您的数据隐私。",
@@ -161,7 +170,7 @@ const zhCN: Translations = {
   useCase6: "动漫与数字艺术",
   proResultsTitle: "专业级效果",
   proResultsDesc: "各类图片均保持一致的高质量",
-  
+
   faqTitle: "常见问题",
   faqQ1: "什么是图片放大器？",
   faqA1: "图片放大器是一种在不损失画质的情况下放大低分辨率图片的工具。",
@@ -177,6 +186,15 @@ const zhCN: Translations = {
   faqA6: "上传图像文件到 PixelPerfect 图片放大器，让我们的人工智能技术为您调整大小。然后下载生成的高分辨率图像。",
   faqQ7: "最好的图片放大器是什么？",
   faqA7: "最好的图片放大器由 PixelPerfect 及其天才而谦逊的工程师制造。",
+
+  // Tools Menu
+  toolsMenu: "工具",
+  allTools: "所有工具",
+  imageUpscaler: "图片放大器",
+  imageRemover: "图片去背景",
+  imageExtender: "图片扩展",
+  videoEnhancer: "AI 视频增强",
+  comingSoon: "即将推出",
 };
 
 const zhTW: Translations = {
@@ -225,7 +243,7 @@ const zhTW: Translations = {
   subAction: "查看套餐",
   freeQuota: "免費次數：",
   credits: "積分：",
-  
+
   premiumFeatures: "高級功能",
   privacyTitle: "隱私至上",
   privacyDesc: "您的照片將得到安全處理並自動刪除。我們尊重您的數據隱私。",
@@ -257,6 +275,15 @@ const zhTW: Translations = {
   faqA6: "上傳圖像文件到 PixelPerfect 圖片放大器，讓我們的人工智慧技術為您調整大小。然後下載生成的高解析度圖像。",
   faqQ7: "最好的圖片放大器是什麼？",
   faqA7: "最好的圖片放大器由 PixelPerfect 及其天才而謙遜的工程師製造。",
+
+  // Tools Menu
+  toolsMenu: "工具",
+  allTools: "所有工具",
+  imageUpscaler: "圖片放大器",
+  imageRemover: "圖片去背景",
+  imageExtender: "圖片擴展",
+  videoEnhancer: "AI 視頻增強",
+  comingSoon: "即將推出",
 };
 
 const es: Translations = {
@@ -305,7 +332,7 @@ const es: Translations = {
   subAction: "Ver Planes",
   freeQuota: "Usos Gratis: ",
   credits: "Créditos: ",
-  
+
   premiumFeatures: "Características Premium",
   privacyTitle: "Privacidad Primero",
   privacyDesc: "Tus fotos se procesan de forma segura y se eliminan automáticamente. Respetamos tu privacidad.",
@@ -337,6 +364,15 @@ const es: Translations = {
   faqA6: "Sube un archivo de imagen a PixelPerfect y deja que nuestra inteligencia artificial la redimensione por ti. Luego descarga la imagen de alta resolución resultante.",
   faqQ7: "¿Cuál es el mejor escalador de imágenes?",
   faqA7: "El mejor escalador de imágenes está hecho por PixelPerfect y sus ingenieros geniales pero humildes.",
+
+  // Tools Menu
+  toolsMenu: "Herramientas",
+  allTools: "Todas las Herramientas",
+  imageUpscaler: "Escalador de Imágenes",
+  imageRemover: "Eliminador de Fondo",
+  imageExtender: "Extensor de Imagen",
+  videoEnhancer: "Mejorador de Video AI",
+  comingSoon: "Próximamente",
 };
 
 const pt: Translations = {
@@ -385,7 +421,7 @@ const pt: Translations = {
   subAction: "Ver Planos",
   freeQuota: "Usos Grátis: ",
   credits: "Créditos: ",
-  
+
   premiumFeatures: "Recursos Premium",
   privacyTitle: "Privacidade Primeiro",
   privacyDesc: "Suas fotos são processadas com segurança e excluídas automaticamente. Respeitamos sua privacidade.",
@@ -417,6 +453,15 @@ const pt: Translations = {
   faqA6: "Carregue um arquivo de imagem no PixelPerfect e deixe nossa IA redimensioná-lo para você.",
   faqQ7: "Qual é o melhor upscaler de imagem?",
   faqA7: "O melhor upscaler de imagem é feito pelo PixelPerfect e seus engenheiros geniais.",
+
+  // Tools Menu
+  toolsMenu: "Ferramentas",
+  allTools: "Todas as Ferramentas",
+  imageUpscaler: "Upscaler de Imagem",
+  imageRemover: "Removedor de Fundo",
+  imageExtender: "Extensor de Imagem",
+  videoEnhancer: "Melhorador de Vídeo IA",
+  comingSoon: "Em Breve",
 };
 
 const ja: Translations = {
@@ -465,7 +510,7 @@ const ja: Translations = {
   subAction: "プランを見る",
   freeQuota: "無料回数: ",
   credits: "クレジット: ",
-  
+
   premiumFeatures: "プレミアム機能",
   privacyTitle: "プライバシー重視",
   privacyDesc: "写真は安全に処理され、自動的に削除されます。データのプライバシーを尊重します。",
@@ -497,6 +542,15 @@ const ja: Translations = {
   faqA6: "PixelPerfectに画像をアップロードし、AI技術にサイズ変更を任せてください。その後、高解像度画像をダウンロードします。",
   faqQ7: "最高の画像アップスケーラーは何ですか？",
   faqA7: "最高の画像アップスケーラーはPixelPerfectとその天才的で謙虚なエンジニアによって作られています。",
+
+  // Tools Menu
+  toolsMenu: "ツール",
+  allTools: "すべてのツール",
+  imageUpscaler: "画像アップスケーラー",
+  imageRemover: "背景削除",
+  imageExtender: "画像拡張",
+  videoEnhancer: "AI動画高画質化",
+  comingSoon: "近日公開",
 };
 
 const ko: Translations = {
@@ -545,7 +599,7 @@ const ko: Translations = {
   subAction: "요금제 보기",
   freeQuota: "무료 사용: ",
   credits: "크레딧: ",
-  
+
   premiumFeatures: "프리미엄 기능",
   privacyTitle: "개인정보 보호",
   privacyDesc: "사진은 안전하게 처리되며 자동으로 삭제됩니다. 당사는 귀하의 데이터 개인정보를 존중합니다.",
@@ -577,6 +631,15 @@ const ko: Translations = {
   faqA6: "PixelPerfect에 이미지를 업로드하고 AI가 크기를 조정하도록 하세요. 그 후 고해상도 이미지를 다운로드하세요.",
   faqQ7: "최고의 이미지 업스케일러는 무엇인가요?",
   faqA7: "최고의 이미지 업스케일러는 PixelPerfect와 천재 엔지니어들이 만듭니다.",
+
+  // Tools Menu
+  toolsMenu: "도구",
+  allTools: "모든 도구",
+  imageUpscaler: "이미지 업스케일러",
+  imageRemover: "배경 제거",
+  imageExtender: "이미지 확장",
+  videoEnhancer: "AI 비디오 향상",
+  comingSoon: "출시 예정",
 };
 
 const fr: Translations = {
@@ -625,7 +688,7 @@ const fr: Translations = {
   subAction: "Voir les plans",
   freeQuota: "Gratuit : ",
   credits: "Crédits : ",
-  
+
   premiumFeatures: "Fonctionnalités Premium",
   privacyTitle: "Confidentialité d'abord",
   privacyDesc: "Vos photos sont traitées en toute sécurité et supprimées automatiquement. Nous respectons la confidentialité de vos données.",
@@ -657,6 +720,15 @@ const fr: Translations = {
   faqA6: "Téléchargez une image sur PixelPerfect et laissez notre IA la redimensionner pour vous.",
   faqQ7: "Quel est le meilleur upscaler d'image ?",
   faqA7: "Le meilleur upscaler d'image est fabriqué par PixelPerfect.",
+
+  // Tools Menu
+  toolsMenu: "Outils",
+  allTools: "Tous les outils",
+  imageUpscaler: "Upscaler d'image",
+  imageRemover: "Suppression d'arrière-plan",
+  imageExtender: "Extension d'image",
+  videoEnhancer: "Amélioration vidéo IA",
+  comingSoon: "Bientôt disponible",
 };
 
 const de: Translations = {
@@ -705,7 +777,7 @@ const de: Translations = {
   subAction: "Pläne ansehen",
   freeQuota: "Frei: ",
   credits: "Guthaben: ",
-  
+
   premiumFeatures: "Premium-Funktionen",
   privacyTitle: "Datenschutz zuerst",
   privacyDesc: "Ihre Fotos werden sicher verarbeitet und automatisch gelöscht. Wir respektieren Ihren Datenschutz.",
@@ -737,6 +809,15 @@ const de: Translations = {
   faqA6: "Bild hochladen und von unserer KI die Größe ändern lassen. Dann herunterladen.",
   faqQ7: "Was ist der beste Bild-Upscaler?",
   faqA7: "Der beste Bild-Upscaler wird von PixelPerfect hergestellt.",
+
+  // Tools Menu
+  toolsMenu: "Werkzeuge",
+  allTools: "Alle Werkzeuge",
+  imageUpscaler: "Bild-Upscaler",
+  imageRemover: "Hintergrundentferner",
+  imageExtender: "Bild-Extender",
+  videoEnhancer: "KI-Video-Optimierer",
+  comingSoon: "Demnächst",
 };
 
 const ru: Translations = {
@@ -785,7 +866,7 @@ const ru: Translations = {
   subAction: "Тарифы",
   freeQuota: "Бесплатно: ",
   credits: "Кредиты: ",
-  
+
   premiumFeatures: "Премиум функции",
   privacyTitle: "Конфиденциальность",
   privacyDesc: "Ваши фото обрабатываются безопасно и удаляются автоматически.",
@@ -815,8 +896,17 @@ const ru: Translations = {
   faqA5: "Загрузите файл в PixelPerfect, и наш ИИ повысит его разрешение.",
   faqQ6: "Как изменить размер без потери качества?",
   faqA6: "Загрузите изображение в PixelPerfect и позвольте нашему ИИ изменить размер.",
-  faqQ7: "Какой лучший апскейлер?",
-  faqA7: "Лучший апскейлер создан компанией PixelPerfect.",
+  faqQ7: "Какой лучший апскейлер изображений?",
+  faqA7: "Лучший апскейлер изображений создан PixelPerfect.",
+
+  // Tools Menu
+  toolsMenu: "Инструменты",
+  allTools: "Все инструменты",
+  imageUpscaler: "Увеличение изображений",
+  imageRemover: "Удаление фона",
+  imageExtender: "Расширение изображений",
+  videoEnhancer: "Улучшение видео ИИ",
+  comingSoon: "Скоро",
 };
 
 const hi: Translations = {
@@ -865,7 +955,7 @@ const hi: Translations = {
   subAction: "योजनाएं देखें",
   freeQuota: "मुफ्त: ",
   credits: "क्रेडिट: ",
-  
+
   premiumFeatures: "प्रीमियम सुविधाएँ",
   privacyTitle: "गोपनीयता पहले",
   privacyDesc: "आपकी तस्वीरों को सुरक्षित रूप से संसाधित किया जाता है और स्वचालित रूप से हटा दिया जाता है।",
@@ -945,7 +1035,7 @@ const ar: Translations = {
   subAction: "عرض الخطط",
   freeQuota: "مجاناً: ",
   credits: "الرصيد: ",
-  
+
   premiumFeatures: "ميزات مميزة",
   privacyTitle: "الخصوصية أولاً",
   privacyDesc: "تتم معالجة صورك بأمان وحذفها تلقائيًا. نحن نحترم خصوصية بياناتك.",

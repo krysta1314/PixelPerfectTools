@@ -6,7 +6,7 @@ import { enhanceImage } from './services/geminiService';
 import { ComparisonSlider } from './components/ComparisonSlider';
 import { Features, UseCases, FAQ } from './components/Features';
 import { Footer } from './components/Footer';
-import { UploadIcon, DownloadIcon, SparklesIcon, MenuIcon, SunIcon, MoonIcon, GlobeIcon, PlusIcon, BrandLogo } from './components/Icons';
+import { UploadIcon, DownloadIcon, SparklesIcon, MenuIcon, SunIcon, MoonIcon, GlobeIcon, PlusIcon, BrandLogo, CheckIcon } from './components/Icons';
 import { getDictionary, LANGUAGES } from './lib/translations';
 
 function App() {
@@ -247,6 +247,20 @@ function App() {
     setShowLoginModal(false);
   };
 
+  const [isToolsMenuOpen, setIsToolsMenuOpen] = useState(false);
+  const toolsMenuRef = useRef<HTMLDivElement>(null);
+
+  // --- Click Outside for Tools Menu ---
+  useEffect(() => {
+    function handleClickOutsideTools(event: MouseEvent) {
+      if (toolsMenuRef.current && !toolsMenuRef.current.contains(event.target as Node)) {
+        setIsToolsMenuOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutsideTools);
+    return () => document.removeEventListener("mousedown", handleClickOutsideTools);
+  }, []);
+
   const handleDragOver = (e: React.DragEvent) => {
     e.preventDefault();
     setIsDragging(true);
@@ -266,11 +280,55 @@ function App() {
     <div dir={lang === 'ar' ? 'rtl' : 'ltr'} className="min-h-screen flex flex-col font-sans selection:bg-primary-500 selection:text-white transition-colors duration-300 relative bg-gray-50 dark:bg-[#0B0F19]">
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[800px] bg-primary-400/20 dark:bg-primary-500/10 rounded-[100%] blur-[120px] pointer-events-none mix-blend-multiply dark:mix-blend-screen opacity-50 dark:opacity-40 animate-pulse z-0"></div>
 
-      <header className="fixed top-6 left-1/2 -translate-x-1/2 w-[calc(100%-60px)] max-w-[1920px] z-50 transition-all duration-300">
+      <header className="fixed top-6 left-1/2 -translate-x-1/2 w-[calc(100%-60px)] max-w-[1430px] z-50 transition-all duration-300">
         <div className="backdrop-blur-xl bg-white/40 dark:bg-black/40 border border-white/20 dark:border-white/10 shadow-lg shadow-black/5 rounded-full px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3 cursor-pointer group" onClick={reset}>
-            <BrandLogo className="w-8 h-8 md:w-10 md:h-10 text-slate-900 dark:text-white group-hover:scale-105 transition-transform" />
-            <span className="text-slate-900 dark:text-white font-bold text-lg tracking-tight hidden sm:block">PixelPerfect <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">AI</span></span>
+          <div className="flex items-center gap-8">
+            <div className="flex items-center gap-3 cursor-pointer group" onClick={reset}>
+              <BrandLogo className="w-8 h-8 md:w-10 md:h-10 text-slate-900 dark:text-white group-hover:scale-105 transition-transform" />
+              <span className="text-slate-900 dark:text-white font-extrabold text-2xl tracking-tighter hidden sm:block font-display drop-shadow-sm">PixelPerfect <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient-x">AI</span></span>
+            </div>
+
+            {/* Tools Menu */}
+            <nav className="hidden md:block relative" ref={toolsMenuRef} onMouseEnter={() => setIsToolsMenuOpen(true)} onMouseLeave={() => setIsToolsMenuOpen(false)}>
+              <button
+                className="flex items-center gap-1 text-slate-700 dark:text-slate-200 font-medium hover:text-primary-600 dark:hover:text-primary-400 transition-colors py-2"
+                onClick={() => setIsToolsMenuOpen(true)}
+              >
+                {t.toolsMenu}
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`transition-transform duration-200 ${isToolsMenuOpen ? 'rotate-180' : ''}`}><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+
+              {isToolsMenuOpen && (
+                <div className="absolute top-full left-0 pt-2 w-64 animate-in fade-in zoom-in-95 duration-200">
+                  <div className="bg-white/90 dark:bg-[#151b2b]/95 backdrop-blur-xl border border-white/20 dark:border-white/10 rounded-2xl shadow-2xl py-2 overflow-hidden">
+                    <a href="#" className="block px-4 py-3 text-sm font-bold text-slate-900 dark:text-white hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                      {t.allTools}
+                    </a>
+                    <div className="h-px bg-slate-200 dark:bg-white/10 my-1"></div>
+
+                    <a href="#" onClick={(e) => { e.preventDefault(); reset(); setIsToolsMenuOpen(false); }} className="block px-4 py-3 text-sm text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/5 transition-colors flex items-center justify-between group">
+                      <span>{t.imageUpscaler}</span>
+                      <CheckIcon className="w-4 h-4 text-primary-500 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </a>
+
+                    <div className="px-4 py-3 text-sm text-slate-400 dark:text-slate-500 flex items-center justify-between cursor-not-allowed opacity-70">
+                      <span>{t.imageRemover}</span>
+                      <span className="text-[10px] font-bold bg-slate-100 dark:bg-white/10 text-slate-500 px-1.5 py-0.5 rounded border border-slate-200 dark:border-white/5">{t.comingSoon}</span>
+                    </div>
+
+                    <div className="px-4 py-3 text-sm text-slate-400 dark:text-slate-500 flex items-center justify-between cursor-not-allowed opacity-70">
+                      <span>{t.imageExtender}</span>
+                      <span className="text-[10px] font-bold bg-slate-100 dark:bg-white/10 text-slate-500 px-1.5 py-0.5 rounded border border-slate-200 dark:border-white/5">{t.comingSoon}</span>
+                    </div>
+
+                    <div className="px-4 py-3 text-sm text-slate-400 dark:text-slate-500 flex items-center justify-between cursor-not-allowed opacity-70">
+                      <span>{t.videoEnhancer}</span>
+                      <span className="text-[10px] font-bold bg-slate-100 dark:bg-white/10 text-slate-500 px-1.5 py-0.5 rounded border border-slate-200 dark:border-white/5">{t.comingSoon}</span>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </nav>
           </div>
 
           <div className="flex items-center gap-2 md:gap-3">

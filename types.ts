@@ -93,4 +93,12 @@ export interface Translations {
   faqQ5: string; faqA5: string;
   faqQ6: string; faqA6: string;
   faqQ7: string; faqA7: string;
+  // Tools Menu
+  toolsMenu: string;
+  allTools: string;
+  imageUpscaler: string;
+  imageRemover: string;
+  imageExtender: string;
+  videoEnhancer: string;
+  comingSoon: string;
 }

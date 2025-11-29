@@ -1,0 +1,13 @@
+<svg width="64" height="64" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Background: Blue -->
+  <rect x="4" y="4" width="32" height="32" rx="8" fill="#3b82f6" fill-opacity="0.2" />
+  <rect x="4" y="4" width="32" height="32" rx="8" stroke="#3b82f6" stroke-width="2" />
+  
+  <!-- Inner Squares: Purple -->
+  <rect x="10" y="10" width="8" height="8" rx="2" fill="#a855f7" />
+  <rect x="10" y="22" width="8" height="8" rx="2" fill="#a855f7" />
+  <rect x="22" y="22" width="8" height="8" rx="2" fill="#a855f7" />
+  
+  <!-- Sparkle: Pink/Purple -->
+  <path d="M26 8L27.5 12.5L32 14L27.5 15.5L26 20L24.5 15.5L20 14L24.5 12.5L26 8Z" fill="#d946ef" />
+</svg>
