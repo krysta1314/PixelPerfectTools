@@ -101,4 +101,61 @@ export interface Translations {
   imageExtender: string;
   videoEnhancer: string;
   comingSoon: string;
+  cartoonGenerator: string;
+  // Home Page
+  homeTitle: string;
+  homeSubtitle: string;
+  homeDesc: string;
+  whyChooseTitle: string;
+  whyChooseDesc: string;
+  aiPowered: string;
+  aiPoweredDesc: string;
+  easyToUse: string;
+  easyToUseDesc: string;
+  secureReliable: string;
+  secureReliableDesc: string;
+  tryNow: string;
+  // Tool Descriptions
+  upscalerDesc: string;
+  removerDesc: string;
+  extenderDesc: string;
+  videoEnhancerDesc: string;
+  cartoonDesc: string;
+  // Coming Soon Page
+  comingSoonTitle: string;
+  comingSoonFeature1: string;
+  comingSoonFeature1Desc: string;
+  comingSoonFeature2: string;
+  comingSoonFeature2Desc: string;
+  comingSoonFeature3: string;
+  comingSoonFeature3Desc: string;
+
+  // New Feature Buttons & Labels
+  removeBgBtn: string;
+  extenderBtn: string;
+  videoEnhanceBtn: string;
+  cartoonBtn: string;
+
+  // Background Remover
+  bgRemoverTitle: string;
+  bgRemoverSubtitle: string;
+
+  // Image Extender
+  extenderTitle: string;
+  extenderSubtitle: string;
+  ratioLabel: string;
+
+  // Video Enhancer
+  videoEnhancerTitle: string;
+  videoEnhancerSubtitle: string;
+  enhanceModeLabel: string;
+
+  // Cartoon Generator
+  cartoonTitle: string;
+  cartoonSubtitle: string;
+  styleLabel: string;
+  styleDisney: string;
+  styleAnime: string;
+  styleSketch: string;
+  styleOil: string;
 }

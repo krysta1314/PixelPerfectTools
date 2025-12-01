@@ -88,12 +88,12 @@ export const BrandLogo: React.FC<{ className?: string }> = ({ className }) => (
       </linearGradient>
     </defs>
     <rect x="4" y="4" width="32" height="32" rx="8" fill="url(#brand_grad)" fillOpacity="0.1" />
-    <rect x="4" y="4" width="32" height="32" rx="8" stroke="url(#brand_grad)" strokeWidth="2" strokeOpacity="0.2"/>
-    
+    <rect x="4" y="4" width="32" height="32" rx="8" stroke="url(#brand_grad)" strokeWidth="2" strokeOpacity="0.2" />
+
     <rect x="10" y="10" width="8" height="8" rx="2" fill="url(#brand_grad)" fillOpacity="0.4" />
     <rect x="10" y="22" width="8" height="8" rx="2" fill="url(#brand_grad)" fillOpacity="0.6" />
     <rect x="22" y="22" width="8" height="8" rx="2" fill="url(#brand_grad)" fillOpacity="0.8" />
-    
+
     <path d="M26 8L27.5 12.5L32 14L27.5 15.5L26 20L24.5 15.5L20 14L24.5 12.5L26 8Z" fill="url(#brand_grad)" />
   </svg>
 );

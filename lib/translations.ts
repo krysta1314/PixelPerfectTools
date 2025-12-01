@@ -106,6 +106,66 @@ const en: Translations = {
   imageExtender: "Image Extender",
   videoEnhancer: "AI Video Enhancer",
   comingSoon: "Coming Soon",
+  cartoonGenerator: "AI Cartoon Generator",
+
+  // Home Page
+  homeTitle: "PixelPerfect AI",
+  homeSubtitle: "Professional AI Image and Video Processing Tools",
+  homeDesc: "Professional AI image and video processing toolkit to make your creations perfect",
+  whyChooseTitle: "Why Choose PixelPerfect AI?",
+  whyChooseDesc: "Powerful AI technology, simple operation, professional results",
+  aiPowered: "AI Powered",
+  aiPoweredDesc: "Using the most advanced Gemini 2.5 Flash AI model for professional-grade results",
+  easyToUse: "Easy to Use",
+  easyToUseDesc: "No professional knowledge required, upload images for professional results",
+  secureReliable: "Secure & Reliable",
+  secureReliableDesc: "Your image data is securely encrypted and automatically deleted after processing",
+  tryNow: "Try Now",
+
+  // Tool Descriptions
+  upscalerDesc: "Use AI technology to upscale images 2-8x while maintaining clarity and detail",
+  removerDesc: "Intelligently identify and remove image backgrounds, one-click transparent background generation",
+  extenderDesc: "AI intelligently extends image boundaries, naturally extending the scene content",
+  videoEnhancerDesc: "Enhance video quality, improve clarity and color performance",
+  cartoonDesc: "Transform photos into beautiful cartoon-style artwork",
+
+  // Coming Soon Page
+  comingSoonTitle: "Coming Soon",
+  comingSoonFeature1: "AI Powered",
+  comingSoonFeature1Desc: "Using the most advanced AI technology for professional-grade results",
+  comingSoonFeature2: "Easy to Use",
+  comingSoonFeature2Desc: "Intuitive interface, no professional knowledge required",
+  comingSoonFeature3: "Fast & Efficient",
+  comingSoonFeature3Desc: "Advanced algorithms ensure high performance.",
+
+  // New Feature Buttons & Labels
+  removeBgBtn: "Remove Background",
+  extenderBtn: "Extend Image",
+  videoEnhanceBtn: "Enhance Video",
+  cartoonBtn: "Generate Cartoon",
+
+  // Background Remover
+  bgRemoverTitle: "AI Background Remover",
+  bgRemoverSubtitle: "Remove backgrounds instantly with AI precision",
+
+  // Image Extender
+  extenderTitle: "AI Image Extender",
+  extenderSubtitle: "Expand your images beyond their borders",
+  ratioLabel: "Extension Ratio",
+
+  // Video Enhancer
+  videoEnhancerTitle: "AI Video Enhancer",
+  videoEnhancerSubtitle: "Upscale and enhance your videos to 4K",
+  enhanceModeLabel: "Enhancement Mode",
+
+  // Cartoon Generator
+  cartoonTitle: "AI Cartoon Generator",
+  cartoonSubtitle: "Transform photos into amazing cartoons",
+  styleLabel: "Cartoon Style",
+  styleDisney: "Disney 3D",
+  styleAnime: "Japanese Anime",
+  styleSketch: "Pencil Sketch",
+  styleOil: "Oil Painting",
 };
 
 const zhCN: Translations = {
@@ -195,6 +255,66 @@ const zhCN: Translations = {
   imageExtender: "图片扩展",
   videoEnhancer: "AI 视频增强",
   comingSoon: "即将推出",
+  cartoonGenerator: "AI 卡通生成器",
+
+  // Home Page
+  homeTitle: "PixelPerfect AI",
+  homeSubtitle: "专业的 AI 图像和视频处理工具",
+  homeDesc: "专业的 AI 图像和视频处理工具集，让您的创作更加完美",
+  whyChooseTitle: "为什么选择 PixelPerfect AI?",
+  whyChooseDesc: "强大的 AI 技术，简单的操作流程，专业的处理效果",
+  aiPowered: "AI 驱动",
+  aiPoweredDesc: "采用最先进的 Gemini 2.5 Flash AI 模型，提供专业级的处理效果",
+  easyToUse: "简单易用",
+  easyToUseDesc: "无需专业知识，上传图片即可获得专业级处理效果",
+  secureReliable: "安全可靠",
+  secureReliableDesc: "您的图片数据安全加密，处理完成后自动删除",
+  tryNow: "立即使用",
+
+  // Tool Descriptions
+  upscalerDesc: "使用 AI 技术将图片放大 2-8 倍，保持清晰度和细节",
+  removerDesc: "智能识别并移除图片背景，一键生成透明背景图",
+  extenderDesc: "AI 智能扩展图片边界，自然延伸画面内容",
+  videoEnhancerDesc: "提升视频质量，增强清晰度和色彩表现",
+  cartoonDesc: "将照片转换为精美的卡通风格艺术作品",
+
+  // Coming Soon Page
+  comingSoonTitle: "即将推出",
+  comingSoonFeature1: "AI 驱动",
+  comingSoonFeature1Desc: "采用最先进的 AI 技术，提供专业级的处理效果",
+  comingSoonFeature2: "简单易用",
+  comingSoonFeature2Desc: "直观的操作界面，无需专业知识即可使用",
+  comingSoonFeature3: "快速高效",
+  comingSoonFeature3Desc: "先进算法确保高性能处理。",
+
+  // New Feature Buttons & Labels
+  removeBgBtn: "移除背景",
+  extenderBtn: "扩展图片",
+  videoEnhanceBtn: "增强视频",
+  cartoonBtn: "生成卡通",
+
+  // Background Remover
+  bgRemoverTitle: "AI 智能去背景",
+  bgRemoverSubtitle: "一键智能移除图片背景，精准识别主体",
+
+  // Image Extender
+  extenderTitle: "AI 图片扩展",
+  extenderSubtitle: "智能填充画面边缘，扩展图片视野",
+  ratioLabel: "扩展比例",
+
+  // Video Enhancer
+  videoEnhancerTitle: "AI 视频增强",
+  videoEnhancerSubtitle: "将视频画质提升至 4K，修复模糊细节",
+  enhanceModeLabel: "增强模式",
+
+  // Cartoon Generator
+  cartoonTitle: "AI 卡通生成器",
+  cartoonSubtitle: "将照片一键转换为多种卡通风格",
+  styleLabel: "卡通风格",
+  styleDisney: "迪士尼 3D",
+  styleAnime: "日系动漫",
+  styleSketch: "铅笔素描",
+  styleOil: "油画风格",
 };
 
 const zhTW: Translations = {
@@ -284,6 +404,66 @@ const zhTW: Translations = {
   imageExtender: "圖片擴展",
   videoEnhancer: "AI 視頻增強",
   comingSoon: "即將推出",
+  cartoonGenerator: "AI 卡通生成器",
+
+  // Home Page
+  homeTitle: "PixelPerfect AI",
+  homeSubtitle: "專業的 AI 圖像和視頻處理工具",
+  homeDesc: "專業的 AI 圖像和視頻處理工具集，讓您的創作更加完美",
+  whyChooseTitle: "為什麼選擇 PixelPerfect AI?",
+  whyChooseDesc: "強大的 AI 技術，簡單的操作流程，專業的處理效果",
+  aiPowered: "AI 驅動",
+  aiPoweredDesc: "採用最先進的 Gemini 2.5 Flash AI 模型，提供專業級的處理效果",
+  easyToUse: "簡單易用",
+  easyToUseDesc: "直觀的操作界面，無需專業知識即可使用",
+  secureReliable: "安全可靠",
+  secureReliableDesc: "您的圖片數據安全加密，處理完成後自動刪除",
+  tryNow: "立即使用",
+
+  // Tool Descriptions
+  upscalerDesc: "使用 AI 技術將圖片放大 2-8 倍，保持清晰度和細節",
+  removerDesc: "智能識別並移除圖片背景，一鍵生成透明背景圖",
+  extenderDesc: "AI 智能擴展圖片邊界，自然延伸畫面內容",
+  videoEnhancerDesc: "提升視頻質量，增強清晰度和色彩表現",
+  cartoonDesc: "將照片轉換為精美的卡通風格藝術作品",
+
+  // Coming Soon Page
+  comingSoonTitle: "即將推出",
+  comingSoonFeature1: "AI 驅動",
+  comingSoonFeature1Desc: "採用最先進的 AI 技術，提供專業級的處理效果",
+  comingSoonFeature2: "簡單易用",
+  comingSoonFeature2Desc: "直觀的操作界面，無需專業知識即可使用",
+  comingSoonFeature3: "快速高效",
+  comingSoonFeature3Desc: "先進算法確保高性能處理。",
+
+  // New Feature Buttons & Labels
+  removeBgBtn: "移除背景",
+  extenderBtn: "擴展圖片",
+  videoEnhanceBtn: "增強視頻",
+  cartoonBtn: "生成卡通",
+
+  // Background Remover
+  bgRemoverTitle: "AI 智能去背景",
+  bgRemoverSubtitle: "一鍵智能移除圖片背景，精準識別主體",
+
+  // Image Extender
+  extenderTitle: "AI 圖片擴展",
+  extenderSubtitle: "智能填充畫面邊界，擴展圖片視野",
+  ratioLabel: "擴展比例",
+
+  // Video Enhancer
+  videoEnhancerTitle: "AI 視頻增強",
+  videoEnhancerSubtitle: "將視頻畫質提升至 4K，修復模糊細節",
+  enhanceModeLabel: "增強模式",
+
+  // Cartoon Generator
+  cartoonTitle: "AI 卡通生成器",
+  cartoonSubtitle: "將照片一鍵轉換為多種卡通風格",
+  styleLabel: "卡通風格",
+  styleDisney: "迪士尼 3D",
+  styleAnime: "日系動漫",
+  styleSketch: "鉛筆素描",
+  styleOil: "油畫風格",
 };
 
 const es: Translations = {
