@@ -49,7 +49,16 @@ export const enhanceImage = async (base64Image: string, scale: number = 2): Prom
     throw new Error("No image data returned from AI");
   } catch (error: any) {
     console.error("Gemini Enhancement Error:", error);
-    // Pass through the specific error message if available
-    throw new Error(error.message || "Failed to process image");
+
+    // Check for rate limit error (429) and provide a user-friendly message.
+    if (error.message && error.message.includes('"code":429')) {
+        try {
+            const errorObj = JSON.parse(error.message);
+            const retryDelayMatch = errorObj.error.message.match(/Please retry in ([\d.]+)s/);
+            const retryDelay = retryDelayMatch ? ` Please try again in about ${Math.ceil(parseFloat(retryDelayMatch[1]))} seconds.` : " Please try again in a moment.";
+            throw new Error(`Too many requests to the AI service.${retryDelay}`);
+        } catch (e) { /* Fallback if parsing fails */ }
+    }
+    throw new Error(error.message?.slice(0, 150) || "Failed to process image with AI.");
   }
 };

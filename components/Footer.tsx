@@ -36,8 +36,8 @@ export const Footer: React.FC<{ t: Translations }> = ({ t }) => {
         <div>
           <h4 className="text-slate-900 dark:text-white font-semibold mb-4">{t.legal}</h4>
           <ul className="space-y-2 text-sm">
-            <li><a href="https://genmi.ai/privacy-policy" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Privacy Policy</a></li>
-            <li><a href="https://genmi.ai/terms-of-service" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Terms of Service</a></li>
+            <li><a href="" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Privacy Policy</a></li>
+            <li><a href="" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Terms of Service</a></li>
             <li className="hidden"><a href="#" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Cookie Policy</a></li>
           </ul>
         </div>
